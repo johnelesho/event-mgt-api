@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+const eventRoute = require("./models/event.route");
 
 const app = express();
 
@@ -28,3 +29,5 @@ app.get("/", (req, res) => {
     status: "Working",
   });
 });
+
+app.use("/api/v1/event", eventRoute);

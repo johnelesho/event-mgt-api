@@ -1,1 +1,10 @@
-GET http://localhost:9000 HTTP/1.1
+@url = http://localhost:9000/api/v1
+
+### Event Route
+
+### Get All Event
+GET {{url}}/event/ HTTP/1.1
+
+
+### Create a new Event
+POST {{url}}/event/ HTTP/1.1
