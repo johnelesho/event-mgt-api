@@ -8,3 +8,20 @@ GET {{url}}/event/ HTTP/1.1
 
 ### Create a new Event
 POST {{url}}/event/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "EmmaGrace23",
+    "scheduledDate": "2023/12/29",
+    "venue": "online"
+}
+
+
+### Get a single Event
+GET  {{url}}/event/6167183a0c2eb176bea534e3 HTTP/1.1
+Content-Type: application/json
+
+
+### Update an event
+PATCH {{url}}/event/6167183a0c2eb176bea534e3/?venue=bafuto&startTime=17 HTTP/1.1
+Content-Type: application/json

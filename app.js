@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const eventRoute = require("./models/event.route");
+const eventRoute = require("./routes/event.route");
 
 const app = express();
 
